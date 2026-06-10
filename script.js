@@ -12,6 +12,6 @@ function isStrong(n){
 
     n = Math.floor(n/10);
   };
-  if (sumfactorial === copy) console.log("Strong")
-  else console.log("Weak");
+  if (sumfactorial == copy) {console.log("Strong")}
+  else {console.log("Weak")};
 }
