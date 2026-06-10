@@ -1,14 +1,14 @@
 function isStrong(n){
-  let factorial = 1;
-  let sumfactorial = 0;
+  let fact = 1;
+  let sumfact = 0;
   let copy = n;
   while(n>0){
     let rem = n%10;
     for(let i = 1; i<= rem; i++){
-      factorial = factorial*1; 
+      fact = fact*i; 
     };
     
-    sumfactorial = sumfactorial + factorial;
+    sumfact = sumfact + fact;
 
     n = Math.floor(n/10);
   };
