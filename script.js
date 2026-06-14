@@ -1,17 +1,4 @@
-function isStrong(n){
-  let sumfact = 0;
-  let copy = n;
-  while(n>0){
-    let rem = n%10;
-    let fact = 1;
-    for(let i = 1; i<= rem; i++){
-      fact = fact*i; 
-    };
-    
-    sumfact = sumfact + fact;
-
-    n = Math.floor(n/10);
-  };
-  if (sumfact == copy) {console.log("Strong")}
-  else {console.log("Weak")};
-}
+let prompt = require('prompt-sync')
+let math = prompt("Enter marks of Maths")
+let math = prompt("Enter marks of Maths")
+let math = prompt("Enter marks of Chemistry")
