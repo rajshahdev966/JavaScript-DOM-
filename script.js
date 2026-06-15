@@ -1,5 +1,5 @@
 // let prompt = require('prompt-sync')();
-let num = Number(prompt("Enter the Number"));
+let num = Number(prompt("Enter the Number"))    ;
 let tablearr = [];
 for(let i = 1; i<tablearr.length; i++){
     tablearr.push(i);
