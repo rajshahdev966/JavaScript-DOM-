@@ -1,19 +1,7 @@
-let prompt = require("prompt-sync")();
-let arr = [1, 2, 3, 4, 5,  6];
-let max = arr[0]
-for(let i = 1; i<arr.length;i++){
-    if(arr[i]>max){
-        max = arr[i];
-    }
+let arr = [65, 25, 5, 6, 55, 56, 75, 87];
+for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+  let temp = arr[i];
+  arr[i] = arr[arr.length - i - 1];
+  arr[arr.length - i - 1] = temp;
 }
-let maxremovearr = arr.filter((val) => {
-    if(val == max) return false;
-    return true;
-})
-let secmax = maxremovearr[0]
-for(let i = 1; i<arr.length -1;i++){
-    if(arr[i]>secmax){
-        secmax = maxremovearr[i];
-    }
-}
-console.log(secmax)
+console.log(arr);
