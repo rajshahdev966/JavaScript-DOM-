@@ -1,5 +1,5 @@
 let prompt = require('prompt-sync')();
-let n  = prompt("Number ")
+let n  = Number(prompt("Number "))
 let copy = n;
 let nsq = n**2;
 let rem;
