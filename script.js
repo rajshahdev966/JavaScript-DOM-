@@ -4,6 +4,7 @@ function parent() {
     console.log("I am child");
     return 50;
   }
+  return child();
 
 }
 
