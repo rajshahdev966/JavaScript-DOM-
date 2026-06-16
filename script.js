@@ -1,10 +1,14 @@
-function parent() {
-  console.log("I an Parent...");
-  function child() {
-    console.log("I am child");
-    return 50
-  }
-  return child;
-
+function dada() {
+    console.log("I am Dada");
+    function papa() {
+        console.log("I am Papa");
+        function child() {
+            console.log("I am child");
+            
+        }
+        return child
+    }
+    return papa
+    
 }
-console.log(parent())
+dada()()()
