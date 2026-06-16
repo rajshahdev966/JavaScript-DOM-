@@ -7,7 +7,7 @@ let count = 0;
 while(n>0){
     let rem = n%10;
     count++;
-    n = n%10;
+    n = Math.floor(n/10);
 }
 if(nsq %  (10**(count)) === copy) console.log(true)
 else console.log(false);
