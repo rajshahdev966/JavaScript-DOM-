@@ -7,7 +7,7 @@ while(n>0){
     let rem = n%10;
     let fact = 1;
     for(let i = 1; i<=n; i++){
-        fact = fact * i
+        fact = fact * i;
     }
     sumfact = sumfact + fact;
     n = Math.floor(n/10)
