@@ -8,4 +8,7 @@ for(let i = 1; i<arr.length;i++){
         maxindex = i;
     }
 }
-console.log([max, maxindex]);
+let maxremovearr = arr.filter((val) => {
+    if(val == max) return false;
+    
+})
