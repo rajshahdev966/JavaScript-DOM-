@@ -2,10 +2,9 @@ function parent() {
   console.log("I an Parent...");
   function child() {
     console.log("I am child");
-    return 50;
+    return 50
   }
-  return child();
+  return child;
 
 }
-
-parent()
+console.log(parent())
