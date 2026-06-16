@@ -1,10 +1,11 @@
 let prompt = require("prompt-sync")();
 let n = Number(prompt("Number "));
-let sumfact = 1;
-for(let i = 2; i<= Math.floor(n/2); i++){
-    if(n%i === 0){
-        sumfact = i + sumfact;
-    }
+let copy = n;
+while(n>0){
+    
 }
-if(sumfact > n) console.log(true)
-else console.log(false);
+while(n>0){
+    let rem = n%10;
+    sumpow = (rem**count) + sumpow;
+    n = Math.floor(n)
+}
