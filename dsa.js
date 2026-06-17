@@ -13,5 +13,9 @@ function countTotalSubarr(array) {
 }
 countTotalSubarr(arr)
 function subarrofKLength(array, k) {
-    for(let i = 0; i<)
+    for(let i = 0; i<= arr.length -  k; i++){
+        for(let j = i; j<arr.length;  j++){
+            
+        }
+    }
 }
