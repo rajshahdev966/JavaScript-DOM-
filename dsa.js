@@ -75,6 +75,6 @@ function printSubarrWithOddSum (array) {
 }
 // printSubarrWithOddSum(arr);
 
-function maxSumofSubarr(params) {
+function maxSumofSubarr(array) {
     
 }
