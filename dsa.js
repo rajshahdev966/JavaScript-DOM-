@@ -1,4 +1,7 @@
-let arr = [10, 20, -100, 69, 17, 15];
+let arr = [
+  10, 20, -100, 69, 17, 15, 2, 5, 6, 80, 60, 20, 10, 15, 14, 16, 13, 12, 14, 17,
+  18, 19, 23,
+];
 function printAllSubarr(array) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i; j < arr.length; j++) {
@@ -153,4 +156,4 @@ function longestarraywithtargetsum(array, T) {
   console.log(maxlength);
 }
 
-longestarraywithtargetsum(arr, 89)
+longestarraywithtargetsum(arr, 89);
