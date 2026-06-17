@@ -30,7 +30,7 @@ function sumofSubarr(arr) {
 // sumofSubarr(arr);
 function printSubarrWithSumTarget(array, T) {
     let count = 0;
-    for(let i = 0; i<arr.length; i++){
+    for(let i = 0; i<array.length; i++){
         let sum = 0
         for (let j = i; j < array.length; j++) {
             sum += arr[j];
@@ -45,7 +45,7 @@ function printSubarrWithSumTarget(array, T) {
 // printSubarrWithSumTarget(arr, 89)
 function printSubarrWithEvenSum (array) {
     let count = 0;
-    for(let i = 0; i<arr.length; i++){
+    for(let i = 0; i<array.length; i++){
         let sum = 0
         for (let j = i; j < array.length; j++) {
             sum += arr[j];
@@ -61,7 +61,7 @@ function printSubarrWithEvenSum (array) {
 
 function printSubarrWithOddSum (array) {
     let count = 0;
-    for(let i = 0; i<arr.length; i++){
+    for(let i = 0; i<array.length; i++){
         let sum = 0
         for (let j = i; j < array.length; j++) {
             sum += arr[j];
@@ -91,6 +91,12 @@ function maxSumofSubarr(array) {
 arr = [10, 20, -100, 69, 17, 15]
 maxSumofSubarr(arr);
 
-function (params) {
-    
+function minSumofSubarray(array) {
+    for(let i = 1; i<array.length; i++){
+        for (let j = i; j < array.length; j++) {
+            sum += arr[j];
+            if()
+            
+        }
+    }
 }
