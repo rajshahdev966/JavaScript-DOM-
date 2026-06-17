@@ -92,11 +92,17 @@ arr = [10, 20, -100, 69, 17, 15]
 maxSumofSubarr(arr);
 
 function minSumofSubarray(array) {
+    let minsum = Infinity
     for(let i = 1; i<array.length; i++){
+        let sum = 0
         for (let j = i; j < array.length; j++) {
             sum += arr[j];
-            if()
+            if(minsum > sum){
+                minsum = sum;
+            }
             
         }
     }
+    console.log(minsum);
 }
+minSumofSubarray(arr)
