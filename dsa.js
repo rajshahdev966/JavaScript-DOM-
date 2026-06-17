@@ -88,4 +88,5 @@ function maxSumofSubarr(array) {
     }
     console.log(maxsum)
 }
-maxSumofSubarr([10, 20, -100, 69, 17, 15]);
+arr = [10, 20, -100, 69, 17, 15]
+maxSumofSubarr(arr);
