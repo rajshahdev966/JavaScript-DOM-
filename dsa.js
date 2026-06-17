@@ -120,7 +120,7 @@ function maxsumofKLengthSubarray(array, k) {
   }
   console.log(maxsum);
 }
-maxsumofKLengthSubarray(arr, 3);
+// maxsumofKLengthSubarray(arr, 3);
 
 // Seecond Approach for Maximum Sum of K Length Subarray by Sliding Window
 
@@ -129,27 +129,28 @@ function maxsumofKLengthSubarrayapp2(array, k) {
     sum += array[i];
   }
   for (let j = 0; j < array.length; j++) {
-    sum = sum + array[j]
-    
+    sum = sum + array[j];
   }
 }
 
-function longestarraywithtargetsum (array, T) {
-    for (let i = 0; i < array.length; i++) {
-        let sum = 0;
-        let maxlength = -Infinity
-        let maxlengtharr = []
-        for (let j = i; j < array.length; j++) {
-            sum += array[j];
-            if(sum === T){
-                let newarr = array.slice(i, j+1);
-                if(newarr.length > maxlength){
-                    maxlength = newarr.length
-                    maxlengtharr = newarr
-                }
-            }            
+function longestarraywithtargetsum(array, T) {
+  let maxlength = -Infinity;
+  let maxlengtharr = [];
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let j = i; j < array.length; j++) {
+      sum += array[j];
+      if (sum === T) {
+        let newarr = array.slice(i, j + 1);
+        if (newarr.length > maxlength) {
+          maxlength = newarr.length;
+          maxlengtharr = newarr;
         }
-        
-        
+      }
     }
+  }
+  console.log(maxlengtharr);
+  console.log(maxlength);
 }
+
+longestarraywithtargetsum(arr, 89)
