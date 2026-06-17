@@ -177,3 +177,7 @@ function smallestarraywithtargetsum(array, T) {
   console.log(minlength);
 }
 // smallestarraywithtargetsum([1, 2, 1, 1, 1], 2);
+
+function countFrequencyOfElementinSubarr(params) {
+    
+}
