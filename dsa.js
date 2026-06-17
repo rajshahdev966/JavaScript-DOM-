@@ -1,4 +1,4 @@
-let arr = [10, 20, 69, 5, 12, 68, 48];
+let arr = [10, 20, 69, 17, 15, 14];
 function printAllSubarr(array) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i; j < arr.length; j++) {
@@ -8,14 +8,38 @@ function printAllSubarr(array) {
 }
 
 function countTotalSubarr(array) {
-    let n = array.length;
-    console.log((n * (n+1))/2)
+  let n = array.length;
+  console.log((n * (n + 1)) / 2);
 }
-countTotalSubarr(arr)
+// countTotalSubarr(arr)
 function subarrofKLength(array, k) {
-    for(let i = 0; i<= arr.length -  k; i++){
-        for(let j = i; j<arr.length;  j++){
-            
+  for (let i = 0; i <= arr.length - k; i++) {
+    console.log(arr.slice(i, i + k));
+  }
+}
+// subarrofKLength(arr, 5)
+function sumofSubarr(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let sum = 0;
+    for (let j = i; j < arr.length; j++) {
+      sum += arr[j];
+      console.log(arr.slice(i, j + 1) + " sum is " + sum);
+    }
+  }
+}
+// sumofSubarr(arr);
+function printSubarrWithSumTarget(array, T) {
+    let count = 0;
+    for(let i = 0; i<arr.length; i++){
+        let sum = 0
+        for (let j = i; j < array.length; j++) {
+            sum += arr[j];
+            if(sum === T){
+                console.log(arr.slice(i,j+1));
+                count++
+            }            
         }
     }
+    console.log(count)
 }
+printAllSubarr(arr, 89);
