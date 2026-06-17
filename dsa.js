@@ -105,4 +105,14 @@ function minSumofSubarray(array) {
     }
     console.log(minsum);
 }
-minSumofSubarray(arr)
+// minSumofSubarray(arr)
+
+function maxsumofKLengthSubarray (array, k){
+    for (let i = 0; i < array.length - k; i++) {
+        for (let j = i; j < array.length; j++) {
+            sum += arr[]
+            
+        }
+        
+    }
+}
