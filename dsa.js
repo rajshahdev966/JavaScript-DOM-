@@ -126,6 +126,8 @@ maxsumofKLengthSubarray(arr, 3);
 
 function maxsumofKLengthSubarrayapp2(array, k) {
   for (let i = 0; i < array.length; i++) {
-    sum += 
+    for (let j = i; j < array.length; j++) {
+                
+    }
   }
 }
