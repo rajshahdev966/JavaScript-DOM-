@@ -80,7 +80,7 @@ function maxSumofSubarr(array) {
     for(let i = 0; i<array.length; i++){
         let sum = 0
         for (let j = i; j < array.length; j++) {
-            sum += arr[j];
+            sum += array[j];
             if(sum>maxsum){
                 maxsum = sum
             }
@@ -96,7 +96,7 @@ function minSumofSubarray(array) {
     for(let i = 0; i<array.length; i++){
         let sum = 0
         for (let j = i; j < array.length; j++) {
-            sum += arr[j];
+            sum += array[j];
             if(minsum > sum){
                 minsum = sum;
             }
