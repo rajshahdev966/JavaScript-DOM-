@@ -156,4 +156,4 @@ function longestarraywithtargetsum(array, T) {
   console.log(maxlength);
 }
 
-longestarraywithtargetsum([1,2,1,1,1], 3);
+longestarraywithtargetsum([1,2,1,1,1], 2);
