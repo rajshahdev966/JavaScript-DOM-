@@ -76,7 +76,7 @@ function printSubarrWithOddSum (array) {
 // printSubarrWithOddSum(arr);
 
 function maxSumofSubarr(array) {
-    let maxsum = 0;
+    let maxsum = -Infinity;
     for(let i = 0; i<array.length; i++){
         let sum = 0
         for (let j = i; j < array.length; j++) {
