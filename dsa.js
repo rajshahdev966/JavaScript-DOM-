@@ -137,12 +137,19 @@ function maxsumofKLengthSubarrayapp2(array, k) {
 function longestarraywithtargetsum (array, T) {
     for (let i = 0; i < array.length; i++) {
         let sum = 0;
+        let maxlength = -Infinity
+        let maxlengtharr = []
         for (let j = i; j < array.length; j++) {
-            sum += arr[j];
+            sum += array[j];
             if(sum === T){
-                
+                let newarr = array.slice(i, j+1);
+                if(newarr.length > maxlength){
+                    maxlength = newarr.length
+                    maxlengtharr = newarr
+                }
             }            
         }
+        
         
     }
 }
