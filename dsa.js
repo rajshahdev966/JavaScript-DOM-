@@ -1,4 +1,4 @@
-let arr = [10, 20, 69, 17, 15, 14];
+let arr = [10, 20, -100, 69, 17, 15]
 function printAllSubarr(array) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i; j < arr.length; j++) {
@@ -88,8 +88,8 @@ function maxSumofSubarr(array) {
     }
     console.log(maxsum)
 }
-arr = [10, 20, -100, 69, 17, 15]
-maxSumofSubarr(arr);
+
+// maxSumofSubarr(arr);
 
 function minSumofSubarray(array) {
     let minsum = Infinity
@@ -108,11 +108,17 @@ function minSumofSubarray(array) {
 // minSumofSubarray(arr)
 
 function maxsumofKLengthSubarray (array, k){
+    let maxsum = -Infinity
     for (let i = 0; i < array.length - k; i++) {
-        for (let j = i; j <= i+k ; j++) {
-            sum += arr
-            
+        let sum = 0;
+        for (let j = i; j < i+k; j++) {
+            sum += arr[j]
+            if(sum>maxsum){
+                maxsum = sum;
+            }
         }
         
     }
+    console.log(maxsum)
 }
+maxsumofKLengthSubarray(arr, 3)
