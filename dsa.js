@@ -1,6 +1,6 @@
 let arr = [
   10, 20, -100, 69, 17, 15, 2, 5, 6, 80, 60, 20, 10, 15, 14, 16, 13, 12, 14, 17,
-  18, 19, 23,
+  18, 19, 23, 10, 23, 12, 12, 15, 30, -50, -80, 0, 10, 10, 15, 12
 ];
 function printAllSubarr(array) {
   for (let i = 0; i < arr.length; i++) {
@@ -178,6 +178,16 @@ function smallestarraywithtargetsum(array, T) {
 }
 // smallestarraywithtargetsum([1, 2, 1, 1, 1], 2);
 
-function countFrequencyOfElementinSubarr(params) {
-    
+function countFrequencyOfElementinSubarr(array , T) {
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i; j < array.length; j++) {
+      if (array.includes(T)) {
+        count++;
+      }
+    }
+  }
+  console.log(count);
 }
+
+countFrequencyOfElementinSubarr(arr, 10)
