@@ -73,4 +73,4 @@ function printSubarrWithOddSum (array) {
     }
     console.log(count)
 }
-printSubarrWithOddSum(arr);
+// printSubarrWithOddSum(arr);
