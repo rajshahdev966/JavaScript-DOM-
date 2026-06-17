@@ -1,4 +1,4 @@
-let arr = [10, 20, -100, 69, 17, 15]
+let arr = [10, 20, -100, 69, 17, 15];
 function printAllSubarr(array) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i; j < arr.length; j++) {
@@ -29,98 +29,103 @@ function sumofSubarr(arr) {
 }
 // sumofSubarr(arr);
 function printSubarrWithSumTarget(array, T) {
-    let count = 0;
-    for(let i = 0; i<array.length; i++){
-        let sum = 0
-        for (let j = i; j < array.length; j++) {
-            sum += arr[j];
-            if(sum === T){
-                console.log(arr.slice(i,j+1));
-                count++
-            }            
-        }
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let j = i; j < array.length; j++) {
+      sum += arr[j];
+      if (sum === T) {
+        console.log(arr.slice(i, j + 1));
+        count++;
+      }
     }
-    console.log(count)
+  }
+  console.log(count);
 }
 // printSubarrWithSumTarget(arr, 89)
-function printSubarrWithEvenSum (array) {
-    let count = 0;
-    for(let i = 0; i<array.length; i++){
-        let sum = 0
-        for (let j = i; j < array.length; j++) {
-            sum += arr[j];
-            if(sum%2 === 0){
-                console.log(arr.slice(i,j+1));
-                count++
-            }            
-        }
+function printSubarrWithEvenSum(array) {
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let j = i; j < array.length; j++) {
+      sum += arr[j];
+      if (sum % 2 === 0) {
+        console.log(arr.slice(i, j + 1));
+        count++;
+      }
     }
-    console.log(count)
+  }
+  console.log(count);
 }
 // printSubarrWithEvenSum(arr);
 
-function printSubarrWithOddSum (array) {
-    let count = 0;
-    for(let i = 0; i<array.length; i++){
-        let sum = 0
-        for (let j = i; j < array.length; j++) {
-            sum += arr[j];
-            if(sum%2 !== 0){
-                console.log(arr.slice(i,j+1));
-                count++
-            }            
-        }
+function printSubarrWithOddSum(array) {
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let j = i; j < array.length; j++) {
+      sum += arr[j];
+      if (sum % 2 !== 0) {
+        console.log(arr.slice(i, j + 1));
+        count++;
+      }
     }
-    console.log(count)
+  }
+  console.log(count);
 }
 // printSubarrWithOddSum(arr);
 
 function maxSumofSubarr(array) {
-    let maxsum = -Infinity;
-    for(let i = 0; i<array.length; i++){
-        let sum = 0
-        for (let j = i; j < array.length; j++) {
-            sum += array[j];
-            if(sum>maxsum){
-                maxsum = sum
-            }
-        }
+  let maxsum = -Infinity;
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let j = i; j < array.length; j++) {
+      sum += array[j];
+      if (sum > maxsum) {
+        maxsum = sum;
+      }
     }
-    console.log(maxsum)
+  }
+  console.log(maxsum);
 }
 
 // maxSumofSubarr(arr);
 
 function minSumofSubarray(array) {
-    let minsum = Infinity
-    for(let i = 0; i<array.length; i++){
-        let sum = 0
-        for (let j = i; j < array.length; j++) {
-            sum += array[j];
-            if(minsum > sum){
-                minsum = sum;
-            }
-            
-        }
+  let minsum = Infinity;
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let j = i; j < array.length; j++) {
+      sum += array[j];
+      if (minsum > sum) {
+        minsum = sum;
+      }
     }
-    console.log(minsum);
+  }
+  console.log(minsum);
 }
 // minSumofSubarray(arr)
 
-function maxsumofKLengthSubarray (array, k){
-    let maxsum = -Infinity
-    for (let i = 0; i < array.length - k + 1; i++) {
-        let sum = 0;
-        for (let j = i; j < i+k; j++) {
-            sum += array[j]
-            
-        }
-        // Because here we have to consider only subarray that has K element not in whole process
-        if(sum>maxsum){
-                maxsum = sum;
-            }
-        
+function maxsumofKLengthSubarray(array, k) {
+  let maxsum = -Infinity;
+  for (let i = 0; i < array.length - k + 1; i++) {
+    let sum = 0;
+    for (let j = i; j < i + k; j++) {
+      sum += array[j];
     }
-    console.log(maxsum)
+    // Because here we have to consider only subarray that has K element not in whole process
+    if (sum > maxsum) {
+      maxsum = sum;
+    }
+  }
+  console.log(maxsum);
 }
-maxsumofKLengthSubarray(arr, 3)
+maxsumofKLengthSubarray(arr, 3);
+
+// Seecond Approach for Maximum Sum of K Length Subarray
+
+function maxsumofKLengthSubarrayapp2(array, k) {
+  for (let i = 0; i < array.length; i++) {
+    sum += 
+  }
+}
