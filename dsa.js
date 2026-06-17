@@ -112,7 +112,7 @@ function maxsumofKLengthSubarray (array, k){
     for (let i = 0; i < array.length - k; i++) {
         let sum = 0;
         for (let j = i; j < i+k; j++) {
-            sum += arr[j]
+            sum += array[j]
             if(sum>maxsum){
                 maxsum = sum;
             }
