@@ -93,7 +93,7 @@ maxSumofSubarr(arr);
 
 function minSumofSubarray(array) {
     let minsum = Infinity
-    for(let i = 1; i<array.length; i++){
+    for(let i = 0; i<array.length; i++){
         let sum = 0
         for (let j = i; j < array.length; j++) {
             sum += arr[j];
