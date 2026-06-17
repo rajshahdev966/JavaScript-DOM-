@@ -76,13 +76,16 @@ function printSubarrWithOddSum (array) {
 // printSubarrWithOddSum(arr);
 
 function maxSumofSubarr(array) {
+    let maxsum = 0;
     for(let i = 0; i<arr.length; i++){
+        let sum = 0
         for (let j = i; j < array.length; j++) {
-            
             sum += arr[j];
-            let maxsum = sum;
-            if()
-            
+            if(sum>maxsum){
+                maxsum = sum
+            }
         }
     }
+    console.log(maxsum)
 }
+maxSumofSubarr(arr);
