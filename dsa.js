@@ -133,3 +133,16 @@ function maxsumofKLengthSubarrayapp2(array, k) {
     
   }
 }
+
+function longestarraywithtargetsum (array, T) {
+    for (let i = 0; i < array.length; i++) {
+        let sum = 0;
+        for (let j = i; j < array.length; j++) {
+            sum += arr[j];
+            if(sum === T){
+                
+            }            
+        }
+        
+    }
+}
