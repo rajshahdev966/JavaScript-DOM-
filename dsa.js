@@ -193,8 +193,8 @@ function countFrequencyOfElementinSubarr(array, T) {
 
 // countFrequencyOfElementinSubarr([1, 2, 3], 2)
 
-let arr2 = [10, 20, 30, 40, 50];
-
-60)
-console.log(arr2);
-
+let arr3 = [];
+for(let i = 0; i< 25; i++){
+    arr3[i] = 2 * (i+1)
+}
+console.log(arr3)
