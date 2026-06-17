@@ -122,7 +122,7 @@ function maxsumofKLengthSubarray(array, k) {
 }
 maxsumofKLengthSubarray(arr, 3);
 
-// Seecond Approach for Maximum Sum of K Length Subarray
+// Seecond Approach for Maximum Sum of K Length Subarray by Sliding Window
 
 function maxsumofKLengthSubarrayapp2(array, k) {
   for (let i = 0; i < k; i++) {
