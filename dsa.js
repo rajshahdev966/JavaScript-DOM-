@@ -42,4 +42,35 @@ function printSubarrWithSumTarget(array, T) {
     }
     console.log(count)
 }
-printAllSubarr(arr, 89);
+// printSubarrWithSumTarget(arr, 89)
+function printSubarrWithEvenSum (array) {
+    let count = 0;
+    for(let i = 0; i<arr.length; i++){
+        let sum = 0
+        for (let j = i; j < array.length; j++) {
+            sum += arr[j];
+            if(sum%2 === 0){
+                console.log(arr.slice(i,j+1));
+                count++
+            }            
+        }
+    }
+    console.log(count)
+}
+// printSubarrWithEvenSum(arr);
+
+function printSubarrWithOddSum (array) {
+    let count = 0;
+    for(let i = 0; i<arr.length; i++){
+        let sum = 0
+        for (let j = i; j < array.length; j++) {
+            sum += arr[j];
+            if(sum%2 !== 0){
+                console.log(arr.slice(i,j+1));
+                count++
+            }            
+        }
+    }
+    console.log(count)
+}
+printSubarrWithOddSum(arr);
