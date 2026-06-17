@@ -144,10 +144,10 @@ function longestarraywithtargetsum(array, T) {
     for (let j = i; j < array.length; j++) {
       sum += array[j];
       if (sum === T) {
-        let length = j - i + 1
+        let length = j - i + 1;
         if (length > maxlength) {
           maxlength = length;
-          maxlengtharr = array.slice(i, j+1);
+          maxlengtharr = array.slice(i, j + 1);
         }
       }
     }
@@ -156,4 +156,24 @@ function longestarraywithtargetsum(array, T) {
   console.log(maxlength);
 }
 
-longestarraywithtargetsum([1,2,1,1,1], 2);
+// longestarraywithtargetsum([1,2,1,1,1], 2);
+
+function smallestarraywithtargetsum(array, T) {
+  let minlength = Infinity;
+  let minlengtharr = [];
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let j = i; j < array.length; j++) {
+      sum += array[j];
+      if (sum === T) {
+        if (minlength > j - i + 1) {
+          minlength = j - i + 1;
+          minlengtharr = array.slice(i, j + 1);
+        }
+      }
+    }
+  }
+  console.log(minlengtharr);
+  console.log(minlength);
+}
+// smallestarraywithtargetsum([1, 2, 1, 1, 1], 2);
