@@ -113,10 +113,12 @@ function maxsumofKLengthSubarray (array, k){
         let sum = 0;
         for (let j = i; j < i+k; j++) {
             sum += array[j]
-            if(sum>maxsum){
+            
+        }
+        // Because here we have to consider only subarray that has K element not in whole process
+        if(sum>maxsum){
                 maxsum = sum;
             }
-        }
         
     }
     console.log(maxsum)
