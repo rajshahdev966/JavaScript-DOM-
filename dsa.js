@@ -125,9 +125,11 @@ maxsumofKLengthSubarray(arr, 3);
 // Seecond Approach for Maximum Sum of K Length Subarray
 
 function maxsumofKLengthSubarrayapp2(array, k) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = i; j < array.length; j++) {
-                
-    }
+  for (let i = 0; i < k; i++) {
+    sum += array[i];
+  }
+  for (let j = 0; j < array.length; j++) {
+    sum = sum + array[j]
+    
   }
 }
