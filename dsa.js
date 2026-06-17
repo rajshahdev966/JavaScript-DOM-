@@ -191,5 +191,5 @@ function countFrequencyOfElementinSubarr(array , T) {
   console.log(count);
 }
 
-// countFrequencyOfElementinSubarr(arr, 10)
+countFrequencyOfElementinSubarr([1, 2, 3], 2)
 
