@@ -109,7 +109,7 @@ function minSumofSubarray(array) {
 
 function maxsumofKLengthSubarray (array, k){
     let maxsum = -Infinity
-    for (let i = 0; i < array.length - k; i++) {
+    for (let i = 0; i < array.length - k + 1; i++) {
         let sum = 0;
         for (let j = i; j < i+k; j++) {
             sum += array[j]
