@@ -64,7 +64,7 @@ userData.forEach((userObj, index)=>{
                 <div class="user-card-text">
                     <div>
                         <span>${userName}</span>
-                        <p>Email: ${email}</p>
+                        <p>Email: <br> ${email}</p>
                     </div>
                     <div class="user-card-buttons">
                         <button class="edit" onclick="">Edit</button>
