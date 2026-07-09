@@ -12,11 +12,12 @@ let userData = []
 
 
 submitButton.addEventListener("click", (events)=>{
-
     events.preventDefault();
     let userName = nameForm.value;
     let email = mailForm.value
     let imgUrl = imageForm.value;
+
+    if(userName.trim() === "" || email.trim() === "" || imgUrl.trim() === "") return;
 
     userCollection.innerHTML += `<div class="user-card">
                 <div class="user-card-img">
