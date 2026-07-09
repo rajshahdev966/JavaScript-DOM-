@@ -52,6 +52,7 @@ let userData = [
 
 let userCardPrint = () => {
   userData.forEach((userObj, index) => {
+    userCollection.innerHTML = ""
     let userName = userObj.name;
     let email = userObj.mail;
     let imgUrl = userObj.image;
@@ -72,7 +73,7 @@ let userCardPrint = () => {
             </div>`;
   });
 };
-
+userCardPrint();
 submitButton.addEventListener("click", (events) => {
   events.preventDefault();
   let userName = nameForm.value;
@@ -87,6 +88,6 @@ submitButton.addEventListener("click", (events) => {
     image: imgUrl,
   }
   userData.push(newUser);
-  userCardPrint
+  userCardPrint();
   form.reset();
 });
