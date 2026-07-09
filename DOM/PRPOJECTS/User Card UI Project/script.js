@@ -114,12 +114,13 @@ let editClick = (index)=>{
                 </div>
             </div>`
 
-    let updateUser = (index) => {
+    
+    
+
+}
+let updateUser = (index) => {
     
     userData[index].name = document.querySelector("#name-updated").value;
     userData[index].mail = document.querySelector("#mail-updated").value;
     userCardPrint();
     }
-    
-
-}
