@@ -51,8 +51,8 @@ let userData = [
 ];
 
 let userCardPrint = () => {
-  userData.forEach((userObj, index) => {
     userCollection.innerHTML = ""
+  userData.forEach((userObj, index) => {
     let userName = userObj.name;
     let email = userObj.mail;
     let imgUrl = userObj.image;
