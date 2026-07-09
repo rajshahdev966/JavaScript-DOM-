@@ -56,5 +56,19 @@ main{
   height: 100%;
   padding: 50px;
 }
-
+.user-card{
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 500px;
+  height: 290px;
+  border-radius: 20px;
+}
+.user-card img{
+  height: 250px;
+  width: 200px;
+  border-radius: 20px;
+}
 
