@@ -79,11 +79,23 @@ main{
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  padding: 10px;
 }
 .user-card-text span{
   font-size: 30px;
   font-weight: 600;
 }
-.user-card-button{
+.user-card-buttons{
+  display: flex;
+  gap: 10px;
+
+
+}
+.user-card-buttons button{
+  width: 100%;
+  background-color: #ffd43b;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 5px 2px;
   
 }
