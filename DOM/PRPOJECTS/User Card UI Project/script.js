@@ -91,3 +91,7 @@ submitButton.addEventListener("click", (events) => {
   userCardPrint();
   form.reset();
 });
+
+let delCard = ()=>{
+    
+}
