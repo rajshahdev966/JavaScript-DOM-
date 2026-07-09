@@ -118,7 +118,7 @@ let editClick = (index)=>{
 
 }
 let updateUser = (index) => {
-    // if (document.querySelector("#name-updated").trim() === "" || document.querySelector("#mail-updated").trim() === "") return;
+    if (document.querySelector("#name-updated").value.trim() === "" || document.querySelector("#mail-updated").value.trim() === "") return;
     userData[index].name = document.querySelector("#name-updated").value;
     userData[index].mail = document.querySelector("#mail-updated").value;
     userCardPrint();
