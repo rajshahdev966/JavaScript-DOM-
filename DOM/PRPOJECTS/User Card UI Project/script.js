@@ -66,7 +66,7 @@ let userCardPrint = () => {
                         <p>Email: <br> ${email}</p>
                     </div>
                     <div class="user-card-buttons">
-                        <button class="edit" onclick="">Edit</button>
+                        <button class="edit" onclick="editClick()">Edit</button>
                         <button class="del" onclick="delCard(${index}   )" style="background-color: #e03131; color: white">Delete</button>
                     </div>
                 </div>
@@ -95,4 +95,8 @@ submitButton.addEventListener("click", (events) => {
 let delCard = (ind)=>{
     userData.splice(ind, 1);
     userCardPrint();
+}
+
+let editClick = ()=>{
+    
 }
