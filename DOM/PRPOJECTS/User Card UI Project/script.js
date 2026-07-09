@@ -15,19 +15,19 @@ let userData = [
     id: 2,
     name: "Emma Wilson",
     mail: "emma.wilson@example.com",
-    image: "https://i.pravatar.cc/150?img=2",
+    image: "https://i.pravatar.cc/150?img=10",
   },
   {
     id: 3,
     name: "Liam Carter",
     mail: "liam.carter@example.com",
-    image: "https://i.pravatar.cc/150?img=3",
+    image: "https://i.pravatar.cc/150?img=12    ",
   },
   {
     id: 4,
     name: "Priya Patel",
     mail: "priya.patel@example.com",
-    image: "https://i.pravatar.cc/150?img=4",
+    image: "https://i.pravatar.cc/150?img=24",
   },
   {
     id: 5,
@@ -39,13 +39,13 @@ let userData = [
     id: 6,
     name: "Sophia Davis",
     mail: "sophia.davis@example.com",
-    image: "https://i.pravatar.cc/150?img=6",
+    image: "https://i.pravatar.cc/150?img=26",
   },
   {
     id: 7,
     name: "Kabir Mehta",
     mail: "kabir.mehta@example.com",
-    image: "https://i.pravatar.cc/150?img=7",
+    image: "https://i.pravatar.cc/150?img=14",
   },
 ];
 
