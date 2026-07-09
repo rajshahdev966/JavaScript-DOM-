@@ -4,7 +4,6 @@ const mailForm = document.querySelector("#mail-form");
 const imageForm = document.querySelector("#image-url");
 const submitButton = document.querySelector("#submit-but");
 const userCollection = document.querySelector(".user-collection");
-
 let userData = [
   {
     id: 1,
@@ -66,8 +65,8 @@ let userCardPrint = () => {
                         <p>Email: <br> ${email}</p>
                     </div>
                     <div class="user-card-buttons">
-                        <button class="edit" onclick="editClick()">Edit</button>
-                        <button class="del" onclick="delCard(${index}   )" style="background-color: #e03131; color: white">Delete</button>
+                        <button class="edit" onclick="editClick(${index})">Edit</button>
+                        <button class="del" onclick="delCard(${index})" style="background-color: #e03131; color: white">Delete</button>
                     </div>
                 </div>
             </div>`;
@@ -92,11 +91,27 @@ submitButton.addEventListener("click", (events) => {
   form.reset();
 });
 
-let delCard = (ind)=>{
-    userData.splice(ind, 1);
+let delCard = (index)=>{
+    userData.splice(index, 1);
     userCardPrint();
 }
-
-let editClick = ()=>{
+const allUserCard = document.querySelectorAll(".user-card")
+let editClick = (index)=>{
+    let imgUrl = userData[index].image;
+    allUserCard[index].innerHTML = `<div class="user-card">
+                <div class="user-card-img">
+                    <img src="${imgUrl}" alt="">
+                </div>
+                <div class="user-card-text">
+                    <div>
+                        <span><input type="text" placeholder="Enter the name" class="update-input" id="name-updated"></span>
+                        <p>Email: <br> <input type="mail" placeholder="Enter the mail" class="update-input" id="mail-updated"></p>
+                    </div>
+                    <div class="user-card-buttons">
+                        <button class="edit" onclick="editClick(${index})">Edit</button>
+                        <button class="del" onclick="delCard(${index})" style="background-color: #e03131; color: white">Delete</button>
+                    </div>
+                </div>
+            </div>`
     
 }
