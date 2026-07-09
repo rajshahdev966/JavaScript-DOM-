@@ -12,6 +12,7 @@ let userData = []
 
 
 submitButton.addEventListener("click", (events)=>{
+    console.log("I am working. ")
     events.preventDefault();
     let userName = nameForm.value;
     let email = mailForm.value
