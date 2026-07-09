@@ -108,7 +108,7 @@ let editClick = (index)=>{
                         <p>Email: <br> <input type="mail" placeholder="Enter the mail" class="update-input" id="mail-updated"></p>
                     </div>
                     <div class="user-card-buttons">
-                        <button class="edit" onclick="updateUser(${index})">Update</button>
+                        <button class="update" onclick="updateUser(${index})">Update</button>
                         <button class="del" onclick="delCard(${index})" style="background-color: #e03131; color: white">Delete</button>
                     </div>
                 </div>
@@ -122,5 +122,5 @@ let updateUser = (index) => {
     
     userData[index].name = document.querySelector("#name-updated").value;
     userData[index].mail = document.querySelector("#mail-updated").value;
-    // userCardPrint();
+    userCardPrint();
     }
