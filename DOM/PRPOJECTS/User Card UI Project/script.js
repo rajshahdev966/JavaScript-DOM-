@@ -113,7 +113,7 @@ let editClick = (index)=>{
                     </div>
                 </div>
             </div>`
-            
+
     let updateUser = (index) => {
     userData[index].name = document.querySelector("#name-updated").value;
     userData[index].mail = document.querySelector("#mail-updated").value;
