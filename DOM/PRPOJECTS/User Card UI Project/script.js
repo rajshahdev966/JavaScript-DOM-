@@ -95,10 +95,9 @@ let delCard = (index)=>{
     userData.splice(index, 1);
     userCardPrint();
 }
-let allUserCard = document.querySelectorAll(".user-card")
 let editClick = (index)=>{
     let imgUrl = userData[index].image;
-    allUserCard[index].innerHTML = `<div class="user-card">
+    document.querySelectorAll(".user-card")[index].innerHTML = `<div class="user-card">
                 <div class="user-card-img">
                     <img src="${imgUrl}" alt="">
                 </div>
