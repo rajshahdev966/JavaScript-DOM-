@@ -12,7 +12,7 @@ let userData = []
 
 
 submitButton.addEventListener("click", (events)=>{
-    console.log("I am working. ")
+
     events.preventDefault();
     let userName = nameForm.value;
     let email = mailForm.value
@@ -25,7 +25,7 @@ submitButton.addEventListener("click", (events)=>{
                 <div class="user-card-text">
                     <div>
                         <span>${userName}</span>
-                        <p>Email: ${userMail}</p>
+                        <p>Email: ${email}</p>
                     </div>
                     <div class="user-card-buttons">
                         <button class="edit" onclick="">Edit</button>
