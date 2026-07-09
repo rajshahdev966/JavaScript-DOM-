@@ -67,7 +67,7 @@ let userCardPrint = () => {
                     </div>
                     <div class="user-card-buttons">
                         <button class="edit" onclick="">Edit</button>
-                        <button class="del" onclick="" style="background-color: #e03131; color: white">Delete</button>
+                        <button class="del" onclick="delCard(index)" style="background-color: #e03131; color: white">Delete</button>
                     </div>
                 </div>
             </div>`;
@@ -92,6 +92,7 @@ submitButton.addEventListener("click", (events) => {
   form.reset();
 });
 
-let delCard = ()=>{
-    
+let delCard = (ind)=>{
+    userData.splice(ind, 1);
+    userCardPrint();
 }
