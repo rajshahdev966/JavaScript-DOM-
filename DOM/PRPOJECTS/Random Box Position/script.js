@@ -3,24 +3,28 @@ const startButton = document.querySelector("button")
 const timeCount = document.querySelector("#time-count")
 const scoreCount = document.querySelector("#score-count")
 let interval;
+let time;
 
 let randomPosGen = ()=>{
-    let posTop = (Math.random() * 99) + 1;
-    let posLeft = (Math.random() * 99) + 1;
+    time += 1;
+    timeCount.innerHTML = time;
+    let posTop = Math.floor((Math.random() * 99) + 1);
+    let posLeft = Math.floor((Math.random() * 99) + 1);
+    let red = Math.floor(Math.random() * 255)
+    let blue = Math.floor(Math.random() * 255)
+    let green = Math.floor(Math.random() * 255)
     randomBox.style.top = `${posTop}%`
     randomBox.style.left = `${posLeft}%`
+    randomBox.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`
 }
 
 startButton.addEventListener('click', ()=>{
-    let time = 0
+    time = 0
+    timeCount.innerHTML = time;
     clearInterval(interval);
     startButton.style.display = "none"
     interval = setInterval(()=>{
-        time += 1;
-        timeCount.innerHTML = time;
         randomPosGen();
-
-
     },1000)
     setTimeout(()=>{
         clearInterval(interval);
