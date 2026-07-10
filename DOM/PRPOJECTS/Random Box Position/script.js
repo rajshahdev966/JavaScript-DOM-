@@ -4,7 +4,6 @@ const timeCounter = document.querySelector("span");
 
 
 startBut.addEventListener("click", () => {
-    let timer;
   let time = 0;
   clearInterval(timer)
   timeCounter.innerHTML = time;
