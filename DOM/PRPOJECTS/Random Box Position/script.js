@@ -4,8 +4,9 @@ const timeCounter = document.querySelector("span");
 
 startBut.addEventListener("click", () => {
   let time = 0;
-
+    timeCounter.innerHTML = time
   let timer = setInterval(() => {
+
     time += 1;
     timeCounter.innerHTML = time
     let distTop = `${Math.floor(Math.random() * 99) + 1}%`;
