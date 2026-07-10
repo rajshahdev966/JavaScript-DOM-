@@ -22,12 +22,13 @@ startButton.addEventListener('click', ()=>{
     time = 0
     timeCount.innerHTML = time;
     clearInterval(interval);
-    startButton.style.display = "none"
+    // startButton.style.display = "none"
     interval = setInterval(()=>{
         randomPosGen();
     },1000)
     setTimeout(()=>{
         clearInterval(interval);
-        startButton.style.display = "flex"
+        // startButton.style.display = "flex"
+        // startButton.style.textAlign = "center"
     },10000)
 })
