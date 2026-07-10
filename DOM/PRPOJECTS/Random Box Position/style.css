@@ -37,9 +37,13 @@ button{
     padding: 5px;
 }
 .random-box{
-    height: 150px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
     border-radius: 10px;
     background-color: darkgoldenrod;
     position: absolute;
+}
+.counters{
+    display: flex;
+    gap: 50px;
 }
