@@ -19,10 +19,11 @@ startBut.addEventListener("click", () => {
   clearInterval(timer);
   timer = setInterval(() => {
     radomBoxGen();
-  }, 1000);
-  if(time === 10){
+    if(time === 10){
     clearInterval(timer);
   }
+  }, 1000);
+  
 
 //   setTimeout(() => {
 //     clearInterval(timer);
