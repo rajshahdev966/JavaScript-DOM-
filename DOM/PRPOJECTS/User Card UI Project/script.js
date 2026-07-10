@@ -103,13 +103,11 @@ let editClick = (index)=>{
                 </div>
                 <div class="user-card-text">
                     <div>
-                        <form>
-                        <input type="text" placeholder="Enter the name" class="update-input" id="name-updated">
-                        Email: <br> <input type="mail" placeholder="Enter the mail" class="update-input" id="mail-updated">
+                        <span><input type="text" placeholder="Enter the name" class="update-input" id="name-updated"></span>
+                        <p>Email: <br> <input type="mail" placeholder="Enter the mail" class="update-input" id="mail-updated"></p>
                     </div>
                     <div class="user-card-buttons">
-                        <input type="submit" class="update" onclick="updateUser(${index})" value="Update">
-                        </form>
+                        <button class="update" onclick="updateUser(${index})">Update</button>
                         <button class="del" onclick="delCard(${index})" style="background-color: #e03131; color: white">Delete</button>
                     </div>
                 </div>
