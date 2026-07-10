@@ -7,9 +7,9 @@ let interval;
 let time;
 const bigBoxHeight = box.clientHeight
 const ranBoxHeight = randomBox.offsetHeight 
-const bigBoxWidth = box.clientHeight
-const ranBoxWidth = randomBox.offsetHeight 
-const 
+const bigBoxWidth = box.clientWidth
+const ranBoxWidth = randomBox.offsetWidth 
+
 
 
 let randomPosGen = ()=>{
