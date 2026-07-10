@@ -16,8 +16,8 @@ let randomPosGen = () => {
   let red = Math.floor(Math.random() * 255);
   let blue = Math.floor(Math.random() * 255);
   let green = Math.floor(Math.random() * 255);
-  randomBox.style.top = `${posTop}%`;
-  randomBox.style.left = `${posLeft}%`;
+  randomBox.style.top = `${posTop}px`;
+  randomBox.style.left = `${posLeft}px`;
   randomBox.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`;
 };
 
