@@ -4,19 +4,18 @@ const timeCounter = document.querySelector("span");
 
 startBut.addEventListener("click", () => {
   let time = 0;
-    timeCounter.innerHTML = time
+  timeCounter.innerHTML = time;
   let timer = setInterval(() => {
-
     time += 1;
-    timeCounter.innerHTML = time
+    timeCounter.innerHTML = time;
     let distTop = `${Math.floor(Math.random() * 99) + 1}%`;
     let distLeft = `${Math.floor(Math.random() * 99) + 1}%`;
 
-  randomBox.style.top = distTop;
-  randomBox.style.left = distLeft;
+    randomBox.style.top = distTop;
+    randomBox.style.left = distLeft;
   }, 1000);
 
-  setTimeout(()=>{
+  setTimeout(() => {
     clearInterval(timer);
-  }, 10000)
+  }, 10000);
 });
