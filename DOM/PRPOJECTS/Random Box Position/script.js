@@ -1,7 +1,8 @@
 const randomBox = document.querySelector(".random-box");
 const startBut = document.querySelector("button");
 const timeCounter = document.querySelector("span");
-let timer
+let timer;
+let time;
 let radomBoxGen = ()=>{
     time += 1;
     timeCounter.innerHTML = time;
@@ -13,7 +14,7 @@ let radomBoxGen = ()=>{
 }
 
 startBut.addEventListener("click", () => {
-  let time = 0;
+  time = 0;
   timeCounter.innerHTML = time;
   clearInterval(timer)
   timer = setInterval(() => {
