@@ -22,7 +22,7 @@ startButton.addEventListener('click', ()=>{
     time = 0
     timeCount.innerHTML = time;
     clearInterval(interval);
-    // startButton.style.display = "none"
+    startButton.style.display = "none"
     interval = setInterval(()=>{
         randomPosGen();
     },1000)
