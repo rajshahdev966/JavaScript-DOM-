@@ -19,6 +19,10 @@ main{
     gap: 30px;
 
 }
+p{
+    color: white;
+    font-size: 35px;
+}
 .box{
     height: 40%;
     width: 60%;
