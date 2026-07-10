@@ -38,6 +38,10 @@ startButton.addEventListener("click", () => {
     startButton.disabled = false;
 randomBox.style.pointerEvents = "none";
   }, 10000);
+
+  setTimeout(() => {
+    
+  }, 12000);
 });
 
 randomBox.addEventListener('click', ()=>{
