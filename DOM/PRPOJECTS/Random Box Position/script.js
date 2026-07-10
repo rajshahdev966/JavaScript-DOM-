@@ -21,14 +21,13 @@ let randomPosGen = ()=>{
 startButton.addEventListener('click', ()=>{
     time = 0
     timeCount.innerHTML = time;
+    startButton.disabled = true;
     clearInterval(interval);
-    startButton.style.display = "none"
     interval = setInterval(()=>{
         randomPosGen();
     },1000)
     setTimeout(()=>{
         clearInterval(interval);
-        // startButton.style.display = "flex"
-        // startButton.style.textAlign = "center"
+        startButton.disabled = false;
     },10000)
 })
