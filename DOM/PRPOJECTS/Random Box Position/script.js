@@ -24,6 +24,7 @@ let randomPosGen = () => {
 startButton.addEventListener("click", () => {
   time = 0;
   score = 0;
+  
   timeCount.innerHTML = time;
   startButton.disabled = true;
   clearInterval(interval);
