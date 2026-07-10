@@ -108,7 +108,7 @@ let editClick = (index)=>{
                         Email: <br> <input type="mail" placeholder="Enter the mail" class="update-input" id="mail-updated">
                     </div>
                     <div class="user-card-buttons">
-                        <button class="update" onclick="updateUser(${index})">Update</button>
+                        <input type="submit" class="update" onclick="updateUser(${index})">Update</button>
                         </form>
                         <button class="del" onclick="delCard(${index})" style="background-color: #e03131; color: white">Delete</button>
                     </div>
