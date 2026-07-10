@@ -2,10 +2,13 @@ const randomBox = document.querySelector(".random-box");
 const startBut = document.querySelector("button");
 const timeCounter = document.querySelector("span");
 
+
 startBut.addEventListener("click", () => {
+    let timer;
   let time = 0;
+  clearInterval(timer)
   timeCounter.innerHTML = time;
-  let timer = setInterval(() => {
+  timer = setInterval(() => {
     time += 1;
     timeCounter.innerHTML = time;
     let distTop = `${Math.floor(Math.random() * 99) + 1}%`;
