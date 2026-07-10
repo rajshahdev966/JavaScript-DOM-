@@ -12,7 +12,7 @@ let randomPosGen = ()=>{
 
 startButton.addEventListener('click', ()=>{
     let time = 0
-    startButton.setAttribute("style", "display:none")
+    startButton.setAttribute("style", "color: black; background-color: black")
     let interval = setInterval(()=>{
         time += 1;
         timeCount.innerHTML = time;
@@ -22,6 +22,6 @@ startButton.addEventListener('click', ()=>{
     },1000)
     setTimeout(()=>{
         clearInterval(interval);
-
-    })
+        startButton.setAttribute("style", "display:flex")
+    },10000)
 })
