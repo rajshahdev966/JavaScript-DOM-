@@ -29,6 +29,8 @@ startButton.addEventListener("click", () => {
   startButton.disabled = true;
   clearInterval(interval);
   interval = setInterval(() => {
+    randomBox.style.pointerEvents = "auto";
+
     randomPosGen();
   }, 1000);
   setTimeout(() => {
