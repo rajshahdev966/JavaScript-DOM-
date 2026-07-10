@@ -35,7 +35,7 @@ startButton.addEventListener("click", () => {
   setTimeout(() => {
     clearInterval(interval);
     startButton.disabled = false;
-    randomBox.disabled = f
+    randomBox.disabled = true; 
   }, 10000);
 });
 
