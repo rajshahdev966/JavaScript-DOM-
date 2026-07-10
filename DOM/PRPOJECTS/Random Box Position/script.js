@@ -5,8 +5,11 @@ const timeCount = document.querySelector("#time-count")
 const scoreCount = document.querySelector("#score-count")
 let interval;
 let time;
-const bigBox = box.clientHeight
+const bigBoxHeight = box.clientHeight
 const ranBoxHeight = randomBox.offsetHeight 
+const bigBoxWidth = box.clientHeight
+const ranBoxWidth = randomBox.offsetHeight 
+const 
 
 
 let randomPosGen = ()=>{
