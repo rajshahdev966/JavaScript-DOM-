@@ -2,6 +2,7 @@ const randomBox = document.querySelector(".random-box")
 const startButton = document.querySelector("button")
 const timeCount = document.querySelector("#time-count")
 const scoreCount = document.querySelector("#score-count")
+let interval;
 
 let randomPosGen = ()=>{
     let posTop = (Math.random() * 99) + 1;
@@ -12,8 +13,9 @@ let randomPosGen = ()=>{
 
 startButton.addEventListener('click', ()=>{
     let time = 0
-    startButton.setAttribute("style", "color: black; background-color: black")
-    let interval = setInterval(()=>{
+    clearInterval(interval);
+    startButton.style.display = "none"
+    interval = setInterval(()=>{
         time += 1;
         timeCount.innerHTML = time;
         randomPosGen();
@@ -22,6 +24,6 @@ startButton.addEventListener('click', ()=>{
     },1000)
     setTimeout(()=>{
         clearInterval(interval);
-        startButton.setAttribute("style", "display:flex")
+        startButton.style.display = "flex"
     },10000)
 })
