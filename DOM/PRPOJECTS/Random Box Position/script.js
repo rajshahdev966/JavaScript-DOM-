@@ -1,6 +1,7 @@
 const randomBox = document.querySelector(".random-box");
 const startBut = document.querySelector("button");
 const timeCounter = document.querySelector("span");
+    let timer
 
 
 startBut.addEventListener("click", () => {
