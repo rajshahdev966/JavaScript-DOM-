@@ -12,8 +12,6 @@ const ranBoxHeight = randomBox.offsetHeight
 let randomPosGen = ()=>{
     time += 1;
     timeCount.innerHTML = time;
-    
-    
     let posTop = Math.floor((Math.random() * 99) + 1);
     let posLeft = Math.floor((Math.random() * 99) + 1);
     let red = Math.floor(Math.random() * 255)
