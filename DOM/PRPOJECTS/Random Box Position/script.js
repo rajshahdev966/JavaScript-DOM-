@@ -1,4 +1,5 @@
 const randomBox = document.querySelector(".random-box")
+const box = document.querySelector(".box")
 const startButton = document.querySelector("button")
 const timeCount = document.querySelector("#time-count")
 const scoreCount = document.querySelector("#score-count")
@@ -10,6 +11,8 @@ let time;
 let randomPosGen = ()=>{
     time += 1;
     timeCount.innerHTML = time;
+    let bigBox = box.clientHeight
+    let ranBoxHeight = randomBox.clientHeight
     let posTop = Math.floor((Math.random() * 99) + 1);
     let posLeft = Math.floor((Math.random() * 99) + 1);
     let red = Math.floor(Math.random() * 255)
