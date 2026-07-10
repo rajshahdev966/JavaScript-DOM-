@@ -1,14 +1,8 @@
 const randomBox = document.querySelector(".random-box");
 const startBut = document.querySelector("button");
 const timeCounter = document.querySelector("span");
-    let timer
-
-
-startBut.addEventListener("click", () => {
-  let time = 0;
-  clearInterval(timer)
-  timeCounter.innerHTML = time;
-  timer = setInterval(() => {
+let timer
+let radomBoxGen = ()=>{
     time += 1;
     timeCounter.innerHTML = time;
     let distTop = `${Math.floor(Math.random() * 99) + 1}%`;
@@ -16,6 +10,14 @@ startBut.addEventListener("click", () => {
 
     randomBox.style.top = distTop;
     randomBox.style.left = distLeft;
+}
+
+startBut.addEventListener("click", () => {
+  let time = 0;
+  timeCounter.innerHTML = time;
+  clearInterval(timer)
+  timer = setInterval(() => {
+    radomBoxGen();
   }, 1000);
 
   setTimeout(() => {
