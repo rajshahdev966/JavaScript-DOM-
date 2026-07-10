@@ -1,9 +1,13 @@
-const randomBox = document.querySelector(".random-box")
+// const randomBox = document.querySelector(".random-box")
+const box = document.querySelector(".box")
 const startButton = document.querySelector("button")
 const timeCount = document.querySelector("#time-count")
 const scoreCount = document.querySelector("#score-count")
 let interval;
 let time;
+
+
+
 
 let randomPosGen = ()=>{
     time += 1;
@@ -31,3 +35,4 @@ startButton.addEventListener('click', ()=>{
         startButton.disabled = false;
     },10000)
 })
+
