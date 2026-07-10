@@ -28,7 +28,7 @@ startButton.addEventListener('click', ()=>{
     startButton.disabled = true;
     clearInterval(interval);
     interval = setInterval(()=>{
-        randomPosGen();
+    randomPosGen();
     },1000)
     setTimeout(()=>{
         clearInterval(interval);
