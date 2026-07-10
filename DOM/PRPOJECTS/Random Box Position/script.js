@@ -27,6 +27,7 @@ startButton.addEventListener("click", () => {
   scoreCount.innerHTML =  score;
   timeCount.innerHTML = time;
   startButton.disabled = true;
+  randomBox.disabled = false;
   clearInterval(interval);
   interval = setInterval(() => {
     randomPosGen();
