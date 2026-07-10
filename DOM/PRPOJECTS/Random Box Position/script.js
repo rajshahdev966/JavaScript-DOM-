@@ -20,13 +20,14 @@ let randomPosGen = () => {
   randomBox.style.left = `${posLeft}px`;
   randomBox.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`;
 };
-
+randomBox.disabled = true;
 startButton.addEventListener("click", () => {
   time = 0;
   score = 0;
   scoreCount.innerHTML =  score;
   timeCount.innerHTML = time;
   startButton.disabled = true;
+  randomBox.disabled = false;
   clearInterval(interval);
   interval = setInterval(() => {
     randomPosGen();
@@ -34,6 +35,7 @@ startButton.addEventListener("click", () => {
   setTimeout(() => {
     clearInterval(interval);
     startButton.disabled = false;
+    randomBox.disabled = f
   }, 10000);
 });
 
