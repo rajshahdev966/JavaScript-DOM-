@@ -23,6 +23,7 @@ let randomPosGen = () => {
 
 startButton.addEventListener("click", () => {
   time = 0;
+  score = 0;
   timeCount.innerHTML = time;
   startButton.disabled = true;
   clearInterval(interval);
@@ -34,3 +35,9 @@ startButton.addEventListener("click", () => {
     startButton.disabled = false;
   }, 10000);
 });
+
+randomBox.addEventListener('click', ()=>{
+    randomBox.disabled = true;
+    score += 1;
+    scoreCount.innerHTML = score
+}) 
