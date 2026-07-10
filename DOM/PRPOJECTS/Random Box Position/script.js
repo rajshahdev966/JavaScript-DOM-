@@ -1,11 +1,9 @@
-// const randomBox = document.querySelector(".random-box")
-const box = document.querySelector(".box")
+const randomBox = document.querySelector(".random-box")
 const startButton = document.querySelector("button")
 const timeCount = document.querySelector("#time-count")
 const scoreCount = document.querySelector("#score-count")
 let interval;
 let time;
-
 
 
 
@@ -28,7 +26,7 @@ startButton.addEventListener('click', ()=>{
     startButton.disabled = true;
     clearInterval(interval);
     interval = setInterval(()=>{
-    randomPosGen();
+        randomPosGen();
     },1000)
     setTimeout(()=>{
         clearInterval(interval);
