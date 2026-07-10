@@ -16,7 +16,7 @@ let radomBoxGen = ()=>{
 startBut.addEventListener("click", () => {
   time = 0;
   timeCounter.innerHTML = time;
-  clearInterval(timer)
+  clearInterval(timer);
   timer = setInterval(() => {
     radomBoxGen();
   }, 1000);
