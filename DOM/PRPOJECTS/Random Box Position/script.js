@@ -40,11 +40,11 @@ startButton.addEventListener("click", () => {
   setTimeout(() => {
     clearInterval(interval);
     startButton.disabled = false;
-randomBox.style.pointerEvents = "none";
+   randomBox.style.pointerEvents = "none";
   }, 10000);
 
   setTimeout(() => {
-    document.main.style.filter = "blur(5px)"
+    main.style.filter = "blur(5px)"
     gameOver.style.display = "flex"
 
 
