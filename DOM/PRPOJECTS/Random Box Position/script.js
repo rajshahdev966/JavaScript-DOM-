@@ -1,13 +1,16 @@
 
 const randomBox = document.querySelector(".random-box");
 const box = document.querySelector(".box");
+const main = document.querySelector("main")
 const startButton = document.querySelector("button");
 const timeCount = document.querySelector("#time-count");
 const scoreCount = document.querySelector("#score-count");
+const gameOver = document.querySelector("#game-over")
 let interval;
 let time;
 const reqHeight = box.clientHeight - randomBox.clientHeight - 1;
 const reqWidth = box.clientWidth - randomBox.clientHeight - 1;
+gameOver.style.display = "none"
 
 let randomPosGen = () => {
   time += 1;
@@ -41,8 +44,11 @@ randomBox.style.pointerEvents = "none";
   }, 10000);
 
   setTimeout(() => {
-    document.body.style.filter = "blur(8px)"
-  }, 12000);
+    document.main.style.filter = "blur(5px)"
+    gameOver.style.display = "flex"
+
+
+  }, 15000);
 });
 
 randomBox.addEventListener('click', ()=>{
