@@ -1,3 +1,4 @@
+
 const randomBox = document.querySelector(".random-box");
 const box = document.querySelector(".box");
 const startButton = document.querySelector("button");
@@ -40,7 +41,7 @@ randomBox.style.pointerEvents = "none";
   }, 10000);
 
   setTimeout(() => {
-    
+    document.body.style.filter = "blur(8px)"
   }, 12000);
 });
 
